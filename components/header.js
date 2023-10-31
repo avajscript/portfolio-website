@@ -30,24 +30,24 @@ class Header extends HTMLElement {
     <header>
     <nav class = 'flex space-between header align-center'>
       <div>
-        <a href="/">
+        <a href="">
         <h4>Matt Designs</h4>
       </a>
       </div>
       <div class = 'flex align-center nav-links'>
-        <a href="/">
+        <a href="">
           <h4>Home</h4>
         </a>
 
-        <a href="/projects.html">
+        <a href="projects.html">
           <h4>Projects</h4>
         </a>
 
-        <a href="/resume.html">
+        <a href="resume.html">
           <h4>Resume</h4>
         </a>
 
-        <a href="/contact.html">
+        <a href="contact.html">
           <h4>Contact</h4>
         </a>
       </div>

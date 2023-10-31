@@ -8,8 +8,7 @@
 }
 
 .box-shadow, .button {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 button {
@@ -20,20 +19,14 @@ button {
   background-color: var(--blue);
   padding: 16px 32px;
   cursor: pointer;
-  -webkit-transition: background-color .25s ease;
-  transition: background-color .25s ease;
+  transition: background-color 0.25s ease;
 }
-
 .button h4 {
   color: var(--off-white);
 }
-
 .button:hover {
   background-color: var(--purple);
 }
-
 .button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-/*# sourceMappingURL=buttons.css.map */
+  box-shadow: none;
+}/*# sourceMappingURL=buttons.css.map */
