@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Work+Sans:wght@400;600&display=swap");
+@import url("./buttons.css");
+
+:root {
+  --black: #10101d;
+  --dark-grey: #8f8f9c;
+  --blue: #3a36ff;
+  --lt-blue: #efefff;
+  --off-white: #f7f6ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.default {
+  width: 100%;
+}
+
+.default-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.wide-page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+// Home page
+.hero {
+  img {
+    object-fit: contain;
+  }
+  .flex-one {
+    margin-left: 16px;
+  }
+  & > :nth-child(1) {
+    margin-right: 16px;
+  }
+  & > :nth-child(2) {
+    margin-left: 16px;
+  }
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.spacer {
+  background-color: var(--lt-blue);
+  padding: 32px;
+  width: 100%;
+  text-align: center;
+}
+.skills-demo {
+  @extend .default-page;
+}
+
+.skill {
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    max-width: 300px;
+    object-fit: cover;
+  }
+  &:nth-of-type(2) {
+    flex-direction: row-reverse;
+    .text {
+      text-align: right;
+    }
+  }
+}
+
+// Icons
+.lrg-icon {
+  font-size: 48px;
+}
+
+.icon-select {
+  cursor: pointer;
+  transition: color 0.25s ease;
+  &:hover {
+    color: var(--dark-grey);
+  }
+}
+// End of icons
+
+// Colors
+.grey {
+  color: var(--dark-grey);
+}
+// End of colors
+
+/* Flex  */
+
+.flex {
+  display: flex;
+}
+
+.flex-one {
+  flex: 1;
+
+  flex-shrink: 0;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+/* End of Flex*/
+
+/* Margins and Padding */
+
+.mar-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.mar-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.mar-bottom-32 {
+  margin-bottom: 32px;
+}
+
+.mar-bottom-48 {
+  margin-bottom: 48px;
+}
+
+.mar-bottom-64 {
+  margin-bottom: 64px;
+}
+
+.mar-bottom-120 {
+  margin-bottom: 120px;
+}
+
+.pad-8 {
+  padding: 8px;
+}
+
+.pad-16 {
+  padding: 16px;
+}
+
+.px-8 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.px-16 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.px-32 {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* End of Margins and Padding *
+
+
+/ * Fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Work Sans";
+  color: var(--black);
+  font-weight: 400;
+}
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  font-family: Merriweather;
+  color: var(--black);
+}
+
+/* Desktop */
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.small {
+  font-size: 0.883rem;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.802rem;
+  }
+
+  h2 {
+    font-size: 1.602rem;
+  }
+
+  h3 {
+    font-size: 1.424rem;
+  }
+
+  h4 {
+    font-size: 1.266rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .small {
+    font-size: 0.889rem;
+  }
+}
+
+/* End of Fonts*/

@@ -1,0 +1,56 @@
+:root {
+  --black: #10101d;
+  --dark-grey: #8f8f9c;
+  --blue: #3a36ff;
+  --purple: #3c39cc;
+  --lt-blue: #efefff;
+  --off-white: #f7f6ff;
+}
+
+.project-section {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  left: 0px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+.project {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 8px;
+  border: 1px solid var(--dark-grey);
+  margin-right: 32px;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.project:hover {
+  background-color: var(--lt-blue);
+}
+
+.project-image {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=projects.css.map */

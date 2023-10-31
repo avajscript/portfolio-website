@@ -1,0 +1,35 @@
+:root {
+  --black: #10101D;
+  --dark-grey: #8F8F9C;
+  --blue: #3A36FF;
+  --purple: #3C39CC;
+  --lt-blue: #EFEFFF;
+  --off-white: #F7F6FF;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+button{
+  border: none;
+}
+.button {
+  
+  @extend .box-shadow;
+  background-color: var(--blue);
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: background-color .25s ease;
+  h4 {
+    color: var(--off-white);
+  }
+  &:hover{
+    background-color: var(--purple);
+  }
+
+  &:active {
+    box-shadow: none;
+    
+  }
+}
