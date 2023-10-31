@@ -4,29 +4,6 @@ class Header extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <style>
-    .header {
-      padding: 16px 32px;
-    }
-    
-    .nav {
-      align-items: center;
-    }
-    header{
-      margin-bottom: 80px;
-    }
-    .nav-links {
-      h4 {
-        margin-left: 32px;
-        transition: color .25s ease;
-        &:hover{
-          color: var(--dark-grey);
-        }
-      }
-     
-    }
-    </style>
-
     <header>
     <nav class = 'flex space-between header align-center'>
       <div>
