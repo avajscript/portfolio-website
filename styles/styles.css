@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+.white {
+  color: var(--off-white);
+}
+
 li {
   margin-left: 24px;
   color: var(--blue);
@@ -85,12 +89,28 @@ a {
   text-decoration-color: var(--blue);
 }
 
+.underline-hover:hover {
+  text-decoration: underline;
+}
+
 .nav {
   align-items: center;
 }
 
 header {
   margin-bottom: 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 16px 32px;
+  background-color: var(--dark-grey);
+}
+
+.footer-flex {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .nav-links h4 {
@@ -251,6 +271,22 @@ textarea:not(:placeholder-shown) {
     width: 100%;
   }
 }
+.cursor {
+  cursor: pointer;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.white-icon {
+  color: var(--off-white);
+  transition: color 0.25s ease;
+}
+.white-icon:hover {
+  color: var(--lt-blue);
+}
+
 .lrg-icon {
   font-size: 48px;
 }

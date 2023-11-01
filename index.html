@@ -1,98 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./components/header.js" defer></script>
+    <script src="./components/footer.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f7ae8c3035.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Matthew Pierce Programmer Portfolio</title>
+  </head>
 
-  <script src='./components/header.js' defer></script>
-  <link rel="stylesheet" href="./styles/styles.css">
-  <title>Matthew Pierce Programmer Portfolio</title>
-</head>
+  <body>
+    <header-component></header-component>
+    <div class="">
+      <div class="hero">
+        <div class="flex mar-bottom-120 hero-flex">
+          <div class="flex-one flex flex-column space-around">
+            <h1 class="mar-bottom-32">
+              Web Designer, Programmer, & Business Promoter
+            </h1>
 
-<body>
-  <header-component></header-component>
-  <div class="">
-    <div class="hero">
-      <div class="flex mar-bottom-120 hero-flex">
-        <div class='flex-one flex flex-column space-around'>
-          <h1 class='mar-bottom-32'>Web Designer, Programmer, & Business Promoter</h1>
-
-          <div>
-            <h3 class='mar-bottom-16'>Check out some of my work</h3>
-            <a href="projects.html">
-              <button class="button">
-                <h4>Projects</h4>
-              </button>
-            </a>
-
+            <div>
+              <h3 class="mar-bottom-16">Check out some of my work</h3>
+              <a href="projects.html">
+                <button class="button">
+                  <h4>Projects</h4>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="flex-one">
+            <img src="images/face.png" alt="Picture of me" />
           </div>
         </div>
-        <div class='flex-one'>
-          <img src="images/face.png" alt="Picture of me">
+      </div>
+
+      <div class="spacer mar-bottom-64">
+        <h1>What Can I Do For You?</h1>
+      </div>
+      <div class="skills-demo">
+        <div class="skill">
+          <div class="text">
+            <h2 class="mar-bottom-16">Java Development</h2>
+            <p class="mar-bottom-8">
+              Experience with object-oriented programming lanuage Java
+            </p>
+            <p class="mar-bottom-8">
+              Built and deployed mutliple real-world applications
+            </p>
+            <p class="mar-bottom-8">
+              Designed and implemented Java Swing for desktop applications
+            </p>
+          </div>
+
+          <div class="image">
+            <img src="images/java.jpg" alt="java logo" />
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="text">
+            <h2 class="mar-bottom-16">JavaScript</h2>
+            <p class="mar-bottom-8">
+              Built many real-world websites and application with
+              Javascript/html/cs
+            </p>
+            <p class="mar-bottom-8">
+              Full-Stack developer with hands-on experience doing front-end
+              programming, web design and backend programming using SQL
+              Relational Databases
+            </p>
+            <p class="mar-bottom-8">
+              ReactJS and NextJS experience building interactive single page
+              applications and static webpages.
+            </p>
+          </div>
+
+          <div class="image">
+            <img src="images/javascript.jpg" alt="JavaScript logo" />
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="text">
+            <h2 class="mar-bottom-16">SQL Relationship Databases</h2>
+            <p class="mar-bottom-8">
+              Experienced with PostgreSQL, MySQL, SQL Server
+            </p>
+            <p class="mar-bottom-8">
+              Ability to design new databases with normalization principles, and
+              redesign databases
+            </p>
+          </div>
+
+          <div class="image">
+            <img src="images/sql.jpg" alt="SQL logo" />
+          </div>
         </div>
       </div>
     </div>
 
+    <div class="mar-bottom-120"></div>
+    <footer>
+      <div class="flex space-between align-start footer-flex">
+        <a href="https://github.com/miscany" target="_blank">
+          <i class="fa-brands fa-github cursor white-icon lrg-icon"></i>
+        </a>
 
-
-
-    <div class="spacer mar-bottom-64">
-      <h1>What Can I Do For You?</h1>
-    </div>
-    <div class="skills-demo">
-      <div class="skill">
-        <div class="text">
-          <h2 class=mar-bottom-16>
-            Java Development
-          </h2>
-          <p class='mar-bottom-8'>Experience with object-oriented programming lanuage Java</p>
-          <p class="mar-bottom-8">Built and deployed mutliple real-world applications</p>
-          <p class="mar-bottom-8">Designed and implemented Java Swing for desktop applications</p>
-        </div>
-
-        <div class="image">
-          <img src="images/java.jpg" alt="java logo">
-        </div>
+        <a href="mailto:pier0248@algonquinlive.com">
+          <p class="white underline-hover">pier0248@algonquinlive.com</p>
+        </a>
       </div>
-
-      <div class="skill">
-        <div class="text">
-          <h2 class=mar-bottom-16>
-            JavaScript
-          </h2>
-          <p class='mar-bottom-8'>Built many real-world websites and application with Javascript/html/cs</p>
-          <p class="mar-bottom-8">Full-Stack developer with hands-on experience doing front-end programming, web design
-            and backend programming using SQL Relational Databases</p>
-          <p class="mar-bottom-8">ReactJS and NextJS experience building interactive single page applications and static
-            webpages.</p>
-        </div>
-
-        <div class="image">
-          <img src="images/javascript.jpg" alt="JavaScript logo">
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="text">
-          <h2 class=mar-bottom-16>
-            SQL Relationship Databases
-          </h2>
-          <p class='mar-bottom-8'>Experienced with PostgreSQL, MySQL, SQL Server</p>
-          <p class="mar-bottom-8">Ability to design new databases with normalization principles, and redesign databases
-          </p>
-
-        </div>
-
-        <div class="image">
-          <img src="images/sql.jpg" alt="SQL logo">
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="mar-bottom-120"></div>
-</body>
-
+    </footer>
+  </body>
 </html>
