@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Work+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap");
 @import url("./buttons.css");
 
 :root {
@@ -14,32 +14,144 @@
   box-sizing: border-box;
 }
 
+li {
+  margin-left: 24px;
+  color: var(--blue);
+}
+
+.bold {
+  font-weight: 600;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
+// Resume Page
+.resume {
+  p {
+    margin-bottom: 8px;
+  }
+
+  .title {
+    margin-bottom: 16px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: var(--off-white);
+      padding: 8px;
+      width: 100%;
+      background-color: var(--blue);
+    }
+  }
+}
+
+.blue-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--blue);
+}
+.resume-header {
+  text-align: center;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: var(--blue);
+  }
+
+  .blue-circle {
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  .links {
+    & > * {
+      margin-right: 4px;
+      margin-left: 4px;
+    }
+  }
+}
+// End of Resume Page
 
 // Header
 .header {
   padding: 16px 32px;
 }
 
+.link {
+  p {
+    color: var(--blue);
+  }
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+  }
+}
+
 .nav {
   align-items: center;
 }
-header{
-  margin-bottom: 80px;
+header {
+  margin-bottom: 16px;
 }
+
 .nav-links {
   h4 {
     margin-left: 32px;
-    transition: color .25s ease;
-    &:hover{
+    transition: color 0.25s ease;
+    &:hover {
       color: var(--dark-grey);
     }
   }
- 
 }
+
+// Inputs
+input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid var(--dark-grey);
+  background-color: #fff;
+  transition: background-color 0.25s ease;
+  &:focus {
+    outline: 2px solid var(--blue);
+    background-color: var(--lt-blue);
+  }
+  &:not(:placeholder-shown) {
+    background-color: var(--lt-blue);
+  }
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid var(--dark-grey);
+  background-color: #fff;
+  transition: background-color 0.25s ease;
+  resize: none;
+  &:focus {
+    outline: 2px solid var(--blue);
+    background-color: var(--lt-blue);
+  }
+  &:not(:placeholder-shown) {
+    background-color: var(--lt-blue);
+  }
+}
+
+.input {
+  margin-bottom: 16px;
+}
+// End of Inputs
 
 // End of Header
 
@@ -51,6 +163,12 @@ header{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+.default-small {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 32px 80px;
 }
 
 .wide-page {
@@ -90,17 +208,66 @@ header{
   margin-bottom: 64px;
   display: flex;
   justify-content: space-between;
+  .text {
+    margin-right: 16px;
+  }
   img {
     max-width: 300px;
     object-fit: cover;
+    margin-left: 16px;
   }
   &:nth-of-type(2) {
     flex-direction: row-reverse;
     .text {
       text-align: right;
+      margin-right: 0px;
+      margin-left: 16px;
+    }
+    img {
+      margin-left: 0px;
+      margin-right: 16px;
     }
   }
 }
+
+// Media queries
+
+@media only screen and (max-width: 700px) {
+  .skill {
+    align-items: center;
+    flex-direction: column !important;
+
+    .text {
+      text-align: center !important;
+      margin: 0px 0px 16px !important;
+    }
+    img {
+      margin: 0;
+    }
+  }
+
+  .header-nav {
+    align-items: flex-start !important;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-flex {
+    flex-direction: column !important;
+    & > div:nth-of-type(1) {
+      margin-bottom: 32px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// End of media queries
 
 // Icons
 .lrg-icon {
@@ -117,12 +284,17 @@ header{
 // End of icons
 
 // Colors
+
+.blue {
+  color: var(--blue);
+}
+
 .grey {
   color: var(--dark-grey);
 }
 // End of colors
 
-/* Flex  */
+// Flex
 
 .flex {
   display: flex;
@@ -252,7 +424,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Work Sans";
+  font-family: Montserrat;
   color: var(--black);
   font-weight: 400;
 }
@@ -265,7 +437,7 @@ h2 {
 }
 
 p {
-  font-family: Merriweather;
+  font-family: "Open Sans";
   color: var(--black);
 }
 

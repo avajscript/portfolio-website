@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Work+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap");
 @import url("./buttons.css");
 :root {
   --black: #10101d;
@@ -14,13 +14,75 @@
   box-sizing: border-box;
 }
 
+li {
+  margin-left: 24px;
+  color: var(--blue);
+}
+
+.bold {
+  font-weight: 600;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
+.resume p {
+  margin-bottom: 8px;
+}
+.resume .title {
+  margin-bottom: 16px;
+}
+.resume .title h1,
+.resume .title h2,
+.resume .title h3,
+.resume .title h4,
+.resume .title h5 {
+  color: var(--off-white);
+  padding: 8px;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.blue-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--blue);
+}
+
+.resume-header {
+  text-align: center;
+}
+.resume-header h1,
+.resume-header h2,
+.resume-header h3,
+.resume-header h4,
+.resume-header h5,
+.resume-header p {
+  color: var(--blue);
+}
+.resume-header .blue-circle {
+  background-color: var(--blue);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.resume-header .links > * {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
 .header {
   padding: 16px 32px;
+}
+
+.link p {
+  color: var(--blue);
+}
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--blue);
 }
 
 .nav {
@@ -28,7 +90,7 @@ a {
 }
 
 header {
-  margin-bottom: 80px;
+  margin-bottom: 16px;
 }
 
 .nav-links h4 {
@@ -39,6 +101,51 @@ header {
   color: var(--dark-grey);
 }
 
+input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid var(--dark-grey);
+  background-color: #fff;
+  transition: background-color 0.25s ease;
+}
+input:focus {
+  outline: 2px solid var(--blue);
+  background-color: var(--lt-blue);
+}
+input:not(:-moz-placeholder-shown) {
+  background-color: var(--lt-blue);
+}
+input:not(:placeholder-shown) {
+  background-color: var(--lt-blue);
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid var(--dark-grey);
+  background-color: #fff;
+  transition: background-color 0.25s ease;
+  resize: none;
+}
+textarea:focus {
+  outline: 2px solid var(--blue);
+  background-color: var(--lt-blue);
+}
+textarea:not(:-moz-placeholder-shown) {
+  background-color: var(--lt-blue);
+}
+textarea:not(:placeholder-shown) {
+  background-color: var(--lt-blue);
+}
+
+.input {
+  margin-bottom: 16px;
+}
+
 .default {
   width: 100%;
 }
@@ -47,6 +154,12 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+.default-small {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 32px 80px;
 }
 
 .wide-page {
@@ -85,18 +198,59 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.skill .text {
+  margin-right: 16px;
+}
 .skill img {
   max-width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-left: 16px;
 }
 .skill:nth-of-type(2) {
   flex-direction: row-reverse;
 }
 .skill:nth-of-type(2) .text {
   text-align: right;
+  margin-right: 0px;
+  margin-left: 16px;
+}
+.skill:nth-of-type(2) img {
+  margin-left: 0px;
+  margin-right: 16px;
 }
 
+@media only screen and (max-width: 700px) {
+  .skill {
+    align-items: center;
+    flex-direction: column !important;
+  }
+  .skill .text {
+    text-align: center !important;
+    margin: 0px 0px 16px !important;
+  }
+  .skill img {
+    margin: 0;
+  }
+  .header-nav {
+    align-items: flex-start !important;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hero-flex {
+    flex-direction: column !important;
+  }
+  .hero-flex > div:nth-of-type(1) {
+    margin-bottom: 32px;
+  }
+  .hero-flex img {
+    width: 100%;
+  }
+}
 .lrg-icon {
   font-size: 48px;
 }
@@ -109,11 +263,14 @@ header {
   color: var(--dark-grey);
 }
 
+.blue {
+  color: var(--blue);
+}
+
 .grey {
   color: var(--dark-grey);
 }
 
-/* Flex  */
 .flex {
   display: flex;
 }
@@ -238,7 +395,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Work Sans";
+  font-family: Montserrat;
   color: var(--black);
   font-weight: 400;
 }
@@ -252,7 +409,7 @@ h2 {
 }
 
 p {
-  font-family: Merriweather;
+  font-family: "Open Sans";
   color: var(--black);
 }
 

@@ -5,14 +5,14 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header>
-    <nav class = 'flex space-between header align-center'>
+    <nav class = 'flex space-between header align-center header-nav'>
       <div>
-        <a href="">
+        <a href="index.html">
         <h4>Matt Designs</h4>
       </a>
       </div>
       <div class = 'flex align-center nav-links'>
-        <a href="">
+        <a href="index.html">
           <h4>Home</h4>
         </a>
 
