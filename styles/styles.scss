@@ -5,6 +5,7 @@
   font-family: Montserrat;
   font-size: 1.2rem;
 }
+// Root css variables for reusability 
 :root {
   --black: #10101d;
   --dark-grey: #8f8f9c;
@@ -12,12 +13,14 @@
   --lt-blue: #efefff;
   --off-white: #f7f6ff;
 }
+// Reset padding on all elements 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Default styling for elements
 .white {
   color: var(--off-white);
 }
@@ -59,7 +62,7 @@ a {
 .box-shadow {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
+// Slideshow on projects page
 #slideshow {
   margin: 0 auto;
   width: 400px;
@@ -201,6 +204,7 @@ textarea {
 
 // End of Header
 
+// Page defaults, reusable
 .default {
   width: 100%;
 }
@@ -247,6 +251,7 @@ textarea {
   width: 100%;
   text-align: center;
 }
+
 .skills-demo {
   @extend .default-page;
 }
