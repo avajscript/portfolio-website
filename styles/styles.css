@@ -79,6 +79,7 @@ a {
 
 .header {
   padding: 16px 32px;
+  margin-bottom: 32px;
 }
 
 .link p {
@@ -186,6 +187,7 @@ textarea:not(:placeholder-shown) {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 32px;
+  min-height: 100vh;
 }
 
 .hero {
