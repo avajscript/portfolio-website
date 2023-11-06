@@ -1,3 +1,4 @@
+// project list
 const projects = [
   {
     name: "Battleship",
@@ -41,16 +42,22 @@ const projects = [
   },
 ];
 
+// current index in projects
 let index = 0;
-// move slideshow when buttons are clicked
 
+// slideshow DOM element
 const slideshow = document.getElementById("slideshow");
 
+// move slideshow to left or right when arrows are clicked
 const moveSlideshow = (iterator) => {
-  // increase or decreae by 1
+  // increase or decrease by 1
   index += iterator;
+  // if index below zero, then set to last array element
   if (index < 0) {
     index = projects.length - 1;
+    // reset index to zero if out of bounds to the right
+  } else if (index > projects.length - 1) {
+    index = 0;
   }
   // set project based on index to project from array
   const project = projects[index];
@@ -136,7 +143,7 @@ const moveSlideshow = (iterator) => {
   arrowLeft.classList.add("small-icon");
   arrowLeft.classList.add("icon-select");
   arrowLeft.classList.add("slideshow-next");
-  arrowLeft.addEventListener("click", () => moveSlideshow(1));
+  arrowLeft.addEventListener("click", () => moveSlideshow(-1));
   // create right arrow
   const arrowRight = document.createElement("i");
   arrowRight.classList.add("fa-solid");
@@ -144,17 +151,16 @@ const moveSlideshow = (iterator) => {
   arrowRight.classList.add("small-icon");
   arrowRight.classList.add("icon-select");
   arrowRight.classList.add("slideshow-prev");
-  arrowRight.addEventListener("click", () => moveSlideshow(-1));
+  arrowRight.addEventListener("click", () => moveSlideshow(1));
 
   flexHolder2.appendChild(arrowLeft);
   flexHolder2.appendChild(arrowRight);
   container.appendChild(flexHolder2);
-  console.log(slideshow.lastChild);
+
+  // empty slideshow
   slideshow.innerHTML = "";
+  // add created elements to slideshow
+  //slideshow.classList.add("slideshow-animation");
 
   slideshow.appendChild(container);
 };
-
-const nextBtn = document.querySelector(".slideshow-next");
-
-const prevBtn = document.querySelector(".slideshow-prev");
