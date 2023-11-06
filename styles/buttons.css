@@ -1,13 +1,13 @@
 :root {
-  --black: #10101D;
-  --dark-grey: #8F8F9C;
-  --blue: #3A36FF;
-  --purple: #3C39CC;
-  --lt-blue: #EFEFFF;
-  --off-white: #F7F6FF;
+  --black: #10101d;
+  --dark-grey: #8f8f9c;
+  --blue: #3a36ff;
+  --purple: #3c39cc;
+  --lt-blue: #efefff;
+  --off-white: #f7f6ff;
 }
 
-.box-shadow, .button {
+.box-shadow, .button, .button-small {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -15,18 +15,24 @@ button {
   border: none;
 }
 
-.button {
+.button, .button-small {
   background-color: var(--blue);
   padding: 16px 32px;
   cursor: pointer;
   transition: background-color 0.25s ease;
 }
-.button h4 {
+.button h4, .button-small h4,
+.button h5,
+.button-small h5 {
   color: var(--off-white);
 }
-.button:hover {
+.button:hover, .button-small:hover {
   background-color: var(--purple);
 }
-.button:active {
+.button:active, .button-small:active {
   box-shadow: none;
+}
+
+.button-small {
+  padding: 8px 16px;
 }/*# sourceMappingURL=buttons.css.map */

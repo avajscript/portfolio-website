@@ -1,35 +1,39 @@
 :root {
-  --black: #10101D;
-  --dark-grey: #8F8F9C;
-  --blue: #3A36FF;
-  --purple: #3C39CC;
-  --lt-blue: #EFEFFF;
-  --off-white: #F7F6FF;
+  --black: #10101d;
+  --dark-grey: #8f8f9c;
+  --blue: #3a36ff;
+  --purple: #3c39cc;
+  --lt-blue: #efefff;
+  --off-white: #f7f6ff;
 }
 
 .box-shadow {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-button{
+button {
   border: none;
 }
 .button {
-  
   @extend .box-shadow;
   background-color: var(--blue);
   padding: 16px 32px;
   cursor: pointer;
-  transition: background-color .25s ease;
-  h4 {
+  transition: background-color 0.25s ease;
+  h4,
+  h5 {
     color: var(--off-white);
   }
-  &:hover{
+  &:hover {
     background-color: var(--purple);
   }
 
   &:active {
     box-shadow: none;
-    
   }
+}
+
+.button-small {
+  @extend .button;
+  padding: 8px 16px;
 }

@@ -19,6 +19,34 @@
     <header-component></header-component>
     <div class="wide-page">
       <h1 class="mar-bottom-64">Projects</h1>
+
+      <div id="slideshow">
+        <div>
+          <img src="./images/battleship.PNG" alt="battleship" />
+          <h3 class="bold">Battleship</h3>
+          <p class="grey small">October, 2022</p>
+          <p class="small mar-bottom-8"><i>Javascript, HTML/CSS</i></p>
+          <p class="mar-bottom-16">A battleship game that fully functions.</p>
+          <div class="flex space-around">
+            <a target="_blank" href="https://avajscript.github.io/Battleship/">
+              <button class="button-small mar-bottom-16 flex align-center">
+                <h5 class="mar-right-8">Preview</h5>
+                <i class="fa-solid fa-link tiny-icon white"></i>
+              </button>
+            </a>
+          </div>
+          <div class="flex space-between">
+            <i
+              onclick="moveSlideshow(1)"
+              class="fa-solid fa-arrow-left small-icon icon-select slideshow-next"
+            ></i>
+            <i
+              onclick="moveSlideshow(-1)"
+              class="fa-solid fa-arrow-right small-icon icon-select slideshow-prev"
+            ></i>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="flex space-between align-start footer-flex">
