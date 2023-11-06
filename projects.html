@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="components/header.js" defer></script>
-    <script src="scripts/projects.js" defer></script>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/projects/projects.css" />
-    <script src="./components/footer.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/f7ae8c3035.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Projects</title>
-  </head>
 
-  <body>
-    <header-component></header-component>
-    <div class="wide-page">
-      <h1 class="mar-bottom-64">Projects</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="components/header.js" defer></script>
+  <script src="scripts/projects.js" defer></script>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/projects/projects.css" />
+  <script src="./components/footer.js" defer></script>
+  <script src="https://kit.fontawesome.com/f7ae8c3035.js" crossorigin="anonymous"></script>
+  <title>Projects</title>
+</head>
 
-      <div id="slideshow">
-        <div>
-          <img src="./images/battleship.PNG" alt="battleship" />
-          <h3 class="bold">Battleship</h3>
-          <p class="grey small">October, 2022</p>
-          <p class="small mar-bottom-8"><i>Javascript, HTML/CSS</i></p>
-          <p class="mar-bottom-16">A battleship game that fully functions.</p>
-          <div class="flex space-around">
-            <a target="_blank" href="https://avajscript.github.io/Battleship/">
-              <button class="button-small mar-bottom-16 flex align-center">
-                <h5 class="mar-right-8">Preview</h5>
-                <i class="fa-solid fa-link tiny-icon white"></i>
-              </button>
-            </a>
-          </div>
-          <div class="flex space-between">
-            <i
-              onclick="moveSlideshow(-1)"
-              class="fa-solid fa-arrow-left small-icon icon-select slideshow-next"
-            ></i>
-            <i
-              onclick="moveSlideshow(1)"
-              class="fa-solid fa-arrow-right small-icon icon-select slideshow-prev"
-            ></i>
-          </div>
+<body>
+  <header-component></header-component>
+  <div class="wide-page">
+    <h1 class="mar-bottom-64">Projects</h1>
+
+    <div id="slideshow">
+      <div>
+        <img src="./images/battleship.PNG" alt="battleship" />
+        <h3 class="bold">Battleship</h3>
+        <p class="grey small">October, 2022</p>
+        <p class="small mar-bottom-8"><i>Javascript, HTML/CSS</i></p>
+        <p class="mar-bottom-16">A battleship game that fully functions.</p>
+        <div class="flex space-around">
+          <a target="_blank" href="https://avajscript.github.io/Battleship/">
+            <button class="button-small mar-bottom-16 flex align-center">
+              <h5 class="mar-right-8">Preview</h5>
+              <i class="fa-solid fa-link tiny-icon white"></i>
+            </button>
+          </a>
+        </div>
+        <div class="flex space-between">
+          <i onclick="moveSlideshow(-1)" class="fa-solid fa-arrow-left small-icon icon-select slideshow-next"></i>
+          <i onclick="moveSlideshow(1)" class="fa-solid fa-arrow-right small-icon icon-select slideshow-prev"></i>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="flex space-between align-start footer-flex">
-        <a href="https://github.com/miscany" target="_blank">
-          <i class="fa-brands fa-github cursor white-icon lrg-icon"></i>
-        </a>
+  </div>
+  <footer>
+    <div class="flex space-between align-start footer-flex">
+      <a href="https://github.com/miscany" target="_blank">
+        <i class="fa-brands fa-github cursor white-icon lrg-icon"></i>
+      </a>
 
-        <a href="mailto:pier0248@algonquinlive.com">
-          <p class="white underline-hover">pier0248@algonquinlive.com</p>
-        </a>
-      </div>
-    </footer>
-  </body>
+      <a href="mailto:pier0248@algonquinlive.com">
+        <p class="white underline-hover">pier0248@algonquinlive.com</p>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>

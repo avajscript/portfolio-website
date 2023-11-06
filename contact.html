@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./components/header.js"></script>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/f7ae8c3035.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Contact Page</title>
-  </head>
-  <body>
-    <header-component></header-component>
-    <div class="default-small">
-      <div class="mar-bottom-64">
-        <h1 class="mar-bottom-16">
-          Would you like to work together or hire me?
-        </h1>
-        <h3 class="mar-bottom-8">Send me an email or write a message below</h3>
-        <a class="link" href="mailto:pier0248@algonquinlive.com">
-          <p>pier0248@algonquinlive.com</p>
-        </a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./components/header.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="https://kit.fontawesome.com/f7ae8c3035.js" crossorigin="anonymous"></script>
+  <title>Contact Page</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <div class="default-small">
+    <div class="mar-bottom-64">
+      <h1 class="mar-bottom-16">
+        Would you like to work together or hire me?
+      </h1>
+      <h3 class="mar-bottom-8">Send me an email or write a message below</h3>
+      <a class="link" href="mailto:pier0248@algonquinlive.com">
+        <p>pier0248@algonquinlive.com</p>
+      </a>
+    </div>
+    <form>
+      <div class="input">
+        <label for="name">
+          <p class="mar-bottom-8">Name or Organization</p>
+        </label>
+        <input type="text" id="name" name="name" placeholder="Full name" />
       </div>
-      <form action="">
-        <div class="input">
-          <label for="name">
-            <h4 class="mar-bottom-8">Name or Organization</h4>
-          </label>
-          <input type="text" id="name" name="name" placeholder="Full name" />
-        </div>
 
-        <div class="input">
-          <label for="email">
-            <h4 class="mar-bottom-8">Contact*</h4>
-          </label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-          />
-        </div>
+      <div class="input">
+        <label for="email">
+          <p class="mar-bottom-8">Contact*</p>
+        </label>
+        <input type="text" id="email" name="email" placeholder="Email Address" />
+      </div>
 
-        <div class="input">
-          <label for="message">
-            <h4 class="mar-bottom-8">What is the offer or project idea?*</h4>
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder=" "
-          ></textarea>
-        </div>
-        <button class="button" type="submit"><h4>Send Message</h4></button>
-      </form>
-    </div>
-    <div class="mar-bottom-120"></div>
-  </body>
-  <footer>
-    <div class="flex space-between align-start footer-flex">
-      <a href="https://github.com/miscany" target="_blank">
-        <i class="fa-brands fa-github cursor white-icon lrg-icon"></i>
-      </a>
+      <div class="input">
+        <label for="message">
+          <p class="mar-bottom-8">What is the offer or project idea?*</p>
+        </label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder=" "></textarea>
+      </div>
+      <button class="button" type="submit">
+        <h4>Send Message</h4>
+      </button>
+    </form>
+  </div>
+  <div class="mar-bottom-120"></div>
+</body>
+<footer>
+  <div class="flex space-between align-start footer-flex">
+    <a href="https://github.com/miscany" target="_blank">
+      <i class="fa-brands fa-github cursor white-icon lrg-icon"></i>
+    </a>
 
-      <a href="mailto:pier0248@algonquinlive.com">
-        <p class="white underline-hover">pier0248@algonquinlive.com</p>
-      </a>
-    </div>
-  </footer>
+    <a href="mailto:pier0248@algonquinlive.com">
+      <p class="white underline-hover">pier0248@algonquinlive.com</p>
+    </a>
+  </div>
+</footer>
+
 </html>
