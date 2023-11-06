@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap");
 @import url("./buttons.css");
+.button {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+}
+
 :root {
   --black: #10101d;
   --dark-grey: #8f8f9c;
@@ -458,6 +463,11 @@ html {
 
 
 / * Fonts */
+label {
+  font-size: 1.2rem;
+  font-family: Montserrat;
+}
+
 h1,
 h2,
 h3,
@@ -534,8 +544,14 @@ p {
   h5 {
     font-size: 1.125rem;
   }
+  .button {
+    font-size: 1.125rem;
+  }
   p {
     font-size: 1rem;
+  }
+  label {
+    font-size: 1.125rem;
   }
   .small {
     font-size: 0.889rem;
